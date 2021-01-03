@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+    transform: rotate(-10deg);
+}
+.navbar h3{
+    color: magenta;
+    cursor: pointer;
+    position: absolute;
+    top: 26px;
+    left: 60px;
+    font-family: 'Cedarville Cursive', cursive;
+    opacity: 60%;
+    z-index: -2;
+    animation: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+    30%{
+        color: magenta;
+    }
+    70%{
+        color: mediumspringgreen;
+    }
+    100%{
+        color: magenta;
+    }
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: rgb(168, 189, 202);
+    line-height: 110px;
+    float: left;
+    animation: sound;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes sound{
+    30%{
+        color: rgb(168, 189, 202);
+    }
+    70%{
+        color: mediumspringgreen;
+    }
+    100%{
+        color: rgb(168, 189, 202);
+    }
+}
+.right-col{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 18px;
+    color: #5f5f5f;
+    font-weight: 400;
+}
+#icon{
+    width: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
